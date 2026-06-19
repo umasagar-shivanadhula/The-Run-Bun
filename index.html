@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bun Run</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /*  TABLET */
+
+        @media (max-width:1024px) {
+
+
+            .nav1 {
+                display: none;
+            }
+
+            .about-container {
+                flex-direction: column;
+            }
+
+            .about_subc1 {
+                width: 90%;
+                margin: auto;
+            }
+
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+
+
+            .our-chefs {
+                grid-template-columns: repeat(2, 1fr);
+                justify-items: center;
+            }
+
+            .registration {
+                flex-direction: column;
+            }
+
+            .registration-form {
+                width: 90%;
+                padding-left: 20px;
+                margin: 50px auto;
+            }
+
+            .registration-video {
+                width: 100%;
+                margin-top: 0;
+                margin-right: 0;
+            }
+
+            .registration-video iframe {
+                height: 500px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .subscribe-form {
+                max-width: 400px;
+                margin: 20px auto 0;
+            }
+        }
+
+        /* MOBILE */
+
+        @media (max-width:768px) {
+
+
+            
+
+            
+            .a-c-p2 {
+                font-size: 40px;
+            }
+
+            .products {
+                grid-template-columns: 1fr;
+            }
+
+
+
+            .our-chefs {
+                grid-template-columns: 1fr;
+                justify-items: center;
+            }
+
+            .our-team {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .registration-form input,
+            .registration-form select,
+            .registration-form button {
+                width: 100%;
+            }
+
+            .registration-video iframe {
+                height: 350px;
+            }
+
+            .instgram-section {
+                flex-direction: column;
+            }
+
+            .instagram-section {
+                flex-direction: column;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .subscribe-form {
+                max-width: 400px;
+                margin: 20px auto 0;
+            }
+        }
+
+        /* SMALL MOBILE */
+
+        @media (max-width:480px) {
+
+            .content {
+                font-size: 22px;
+            }
+
+            .a-c-p2 {
+                font-size: 30px;
+            }
+
+            .registration-video iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+
+            <div class="nav1">
+
+                <select class="dropdown">
+                    <option value="₹">INR</option>
+                    <option value="$">USD</option>
+                    <option value="€">EUR</option>
+                </select>
+                <p>|</p>
+
+                <select class="dropdown">
+                    <option>Eng</option>
+                    <option>Spanish</option>
+                </select>
+                <p>|</p>
+
+                <a href="#">Sign_In</a>
+
+            </div>
+
+            <div class="nav2">
+                <img src="./images/logo.png" alt="logo" class="logo">
+            </div>
+
+            <div class="nav3">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <i class="fa-regular fa-heart"></i>
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <p>Cart: ₹ 0.00</p>
+
+            </div>
+
+        </nav>
+
+
+    </header>
+
+    <main>
+
+        <section class="hero_container">
+            <nav class="navbar2">
+                <a href="#">Home</a>
+                <a href="#about-container">About</a>
+                <a href="#products">Shop</a>
+                <a href="#">Pages</a>
+                <a href="#instagram-section">Blog</a>
+            </nav>
+
+            <div class="hero_subc1">
+                <div class="content">
+                    <p> Freshly baked,<br> Instantly Loved.</p>
+                    <button>See Today's special </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-container" id="about-container">
+
+            <div class="about_subc1">
+                <p class="a-c-p1">ABOUT THE BUN RUN</p>
+                <P class="a-c-p2">Freshly Baked Happiness, Every Single Day</P>
+                <p class="a-c-p3">At The Bun Run, we believe every bake should bring a smile.
+                    From soft buns and buttery croissants to rich cakes and handcrafted pastries, everything is prepared
+                    fresh each day using quality ingredients and a passion for baking.
+                    Our goal is simple: create treats that feel warm, comforting, and unforgettable.
+                    Whether you're grabbing a quick morning pastry, celebrating a special occasion, or satisfying a
+                    late-night craving, The Bun Run is here to make every bite worth the run.</p>
+            </div>
+
+            <div class="bakery-icons">
+
+                <div class="icon-card">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <h4>Cakes</h4>
+                </div>
+
+                <div class="icon-card">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                    <h4>Cookies</h4>
+                </div>
+
+                <div class="icon-card">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h4>Coffee</h4>
+                </div>
+
+                <div class="icon-card">
+                    <i class="fa-solid fa-ice-cream"></i>
+                    <h4>Desserts</h4>
+                </div>
+
+                <div class="icon-card">
+                    <i class="fa-solid fa-bread-slice"></i>
+                    <h4>Breads</h4>
+                </div>
+
+                <div class="icon-card">
+                    <i class="fa-solid fa-cheese"></i>
+                    <h4>Pastries</h4>
+                </div>
+
+                <div class="icon-card">
+                    <i class="fa-solid fa-heart"></i>
+                    <h4>Made with Love</h4>
+                </div>
+
+                <div class="icon-card">
+                    <i class="fa-solid fa-star"></i>
+                    <h4>Premium</h4>
+                </div>
+
+                <div class="icon-card">
+                    <i class="fa-solid fa-gift"></i>
+                    <h4>Custom Orders</h4>
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr style="background-color:#e48532; color:#e48532; margin:10px 40px; height:1px">
+
+        <section class="product" id="products">
+
+            <h3>Cup Cakes</h3>
+            <section class="products cup-cakes">
+
+                <div class="product-card">
+
+                    <div class="image-box">
+                        <img src="./images/cup_cakes/cupcake1.png" alt="cupcake1">
+                        <span class="tag">Cupcake</span>
+                    </div>
+
+                    <h3>DOZEN CUPCAKES</h3>
+
+                    <div class="action-area">
+                        <p class="price">₹299</p>
+                        <a href="#" class="cart-btn">Add to Cart
+                            <hr style="color:#C08552; height:3px; background-color:#C08552 ;border:none;">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+
+                    <div class="image-box">
+                        <img src="./images/cup_cakes/cupcake2.png" alt="cupcake1">
+                        <span class="tag">Cupcake</span>
+                    </div>
+
+                    <h3>DOZEN CUPCAKES</h3>
+
+                    <div class="action-area">
+                        <p class="price">₹299</p>
+                        <a href="#" class="cart-btn">Add to Cart
+                            <hr style="color:#C08552; height:3px; background-color:#C08552 ;border:none;">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+
+                    <div class="image-box">
+                        <img src="./images/cup_cakes/cupcake3.png" alt="cupcake1">
+                        <span class="tag">Cupcake</span>
+                    </div>
+
+                    <h3>DOZEN CUPCAKES</h3>
+
+                    <div class="action-area">
+                        <p class="price">₹299</p>
+                        <a href="#" class="cart-btn">Add to Cart
+                            <hr style="color:#C08552; height:3px; background-color:#C08552 ;border:none;">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+
+                    <div class="image-box">
+                        <img src="./images/cup_cakes/cupcake4.png" alt="cupcake1">
+                        <span class="tag">Cupcake</span>
+                    </div>
+
+                    <h3>DOZEN CUPCAKES</h3>
+
+                    <div class="action-area">
+                        <p class="price">₹299</p>
+                        <a href="#" class="cart-btn">Add to Cart
+                            <hr style="color:#e48532; height:3px; background-color:#e48532 ;border:none;">
+                        </a>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <h3>Cakes</h3>
+            <section class="products cakes">
+                <div class="product-card">
+
+                    <div class="image-box">
+                        <img src="./images/cakes/cake1.png" alt="cupcake1">
+                        <span class="tag">Cupcake</span>
+                    </div>
+
+                    <h3>DOZEN CUPCAKES</h3>
+
+                    <div class="action-area">
+                        <p class="price">₹299</p>
+                        <a href="#" class="cart-btn">Add to Cart
+                            <hr style="color:#C08552; height:3px; background-color:#C08552 ;border:none;">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+
+                    <div class="image-box">
+                        <img src="./images/cakes/cake2.png" alt="cupcake1">
+                        <span class="tag">Cupcake</span>
+                    </div>
+
+                    <h3>DOZEN CUPCAKES</h3>
+
+                    <div class="action-area">
+                        <p class="price">₹299</p>
+                        <a href="#" class="cart-btn">Add to Cart
+                            <hr style="color:#C08552; height:3px; background-color:#C08552 ;border:none;">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+
+                    <div class="image-box">
+                        <img src="./images/cakes/cake3.png" alt="cupcake1">
+                        <span class="tag">Cupcake</span>
+                    </div>
+
+                    <h3>DOZEN CUPCAKES</h3>
+
+                    <div class="action-area">
+                        <p class="price">₹299</p>
+                        <a href="#" class="cart-btn">Add to Cart
+                            <hr style="color:#C08552; height:3px; background-color:#C08552 ;border:none;">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+
+                    <div class="image-box">
+                        <img src="./images/cakes/cake4.png" alt="cupcake1">
+                        <span class="tag">Cupcake</span>
+                    </div>
+
+                    <h3>DOZEN CUPCAKES</h3>
+
+                    <div class="action-area">
+                        <p class="price">₹299</p>
+                        <a href="#" class="cart-btn">Add to Cart
+                            <hr style="color:#e48532; height:3px; background-color:#e48532 ;border:none;">
+                        </a>
+                    </div>
+                </div>
+
+
+            </section>
+
+        </section>
+
+        <section class="registration">
+
+            <div class="registration-form">
+                <p>Class Cakes</p>
+                <i>Made from your <br>own hands</i>
+
+                <input type="text" name="name" placeholder="Name">
+                <input type="number" name="number" placeholder="Phone">
+                <select>
+                    <option>Study Classes</option>
+                    <option>Writing Classes</option>
+                    <option>Reading Classes</option>
+                </select>
+                <input type="text" name="requirements" placeholder="Type your requirements">
+                <button>REGISTRATION</button>
+
+            </div>
+
+            <div class="registration-video">
+
+                <iframe style="border-radius:10px;" src="https://www.youtube.com/embed/iIPbOkI0LI4?si=Mze1QrFg_riupzN5"
+                    frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+
+        </section>
+
+        <section id="our-team">
+
+            <div class="our-team">
+                <div>
+                    <h3 style="color:#e48532;font-size:25px; font-weight:normal;">Our Team</h3>
+                    <i style="font-size:50px; font-weight:bold;">Sweet Baker</i>
+                </div>
+                <div style="margin-top:20px">
+                    <a href="#" class="join-us-button">Join Us</a>
+                </div>
+
+            </div>
+
+            <div class="our-chefs">
+
+                <div class="chef-card">
+
+                    <img src="./images/chefs/chef1.png" alt="Chef">
+
+                    <div class="chef-info">
+                        <h3>RANDY BUTLER</h3>
+                        <p>Decorator</p>
+
+                        <div class="social-icons">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="chef-card">
+
+                    <img src="./images/chefs/chef2.png" alt="Chef">
+
+                    <div class="chef-info">
+                        <h3>HASINI</h3>
+                        <p>Decorator</p>
+
+                        <div class="social-icons">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="chef-card">
+
+                    <img src="./images/chefs/chef1.png" alt="Chef">
+
+                    <div class="chef-info">
+                        <h3>REDDY</h3>
+                        <p>Decorator</p>
+
+                        <div class="social-icons">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="chef-card">
+
+                    <img src="./images/chefs/chef2.png" alt="Chef">
+
+                    <div class="chef-info">
+                        <h3>SHETTI</h3>
+                        <p>Decorator</p>
+
+                        <div class="social-icons">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="instagram-section" id="instagram-section">
+            <div class="instagram-content">
+                <span class="sub-heading">FOLLOW US ON INSTAGRAM</span>
+
+                <h2>
+                    Sweet moments <br>
+                    are saved as <br>
+                    memories.
+                </h2>
+
+                <div class="instagram-handle">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>@The Bun Run</span>
+                </div>
+            </div>
+
+            <div class="instagram-gallery">
+                <img src="./images/instagram/img1.jpg" alt="Berry Cake" class="iimg1">
+                <img src="./images/instagram/img2.jpg" alt="Cake Slice" class="iimg3">
+                <img src="./images/instagram/img3.jpg" alt="Cupcake" class="iimg4">
+                <img src="./images/instagram/img4.jpg" alt="Donuts" class="iimg2">
+                <img src="./images/instagram/img5.jpg" alt="Dessert" class="iimg3">
+                <img src="./images/instagram/img6.jpg" alt="Strawberry Cake">
+            </div>
+        </section>
+
+        <section class="location">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7609.02616130322!2d78.41264240585717!3d17.53074215222294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8e3b64cd1f4d%3A0xe09b9e7554ecde4!2sVenus%20Rock%20Heights!5e0!3m2!1sen!2sin!4v1781799916703!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-overlay">
+
+            <div class="footer-container">
+
+                <div class="footer-col">
+                    <h3>WORKING HOURS</h3>
+
+                    <p>Monday - Friday: 08:00 am - 08:30 pm</p>
+                    <p>Saturday: 10:00 am - 06:30 pm</p>
+                    <p>Sunday: 10:00 am - 04:30 pm</p>
+                </div>
+                <hr>
+
+                <div class="footer-col center-col">
+
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        <h2>The Bun Run</h2>
+                    </div>
+
+                    <p>
+                        Freshly baked happiness every day.
+                        Delicious cakes, pastries and desserts
+                        made with love.
+                    </p>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+
+                </div>
+                <hr>
+
+                <div class="footer-col">
+
+                    <h3>SUBSCRIBE</h3>
+
+                    <p>Get latest updates and offers.</p>
+
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Email Address">
+                        <button type="submit">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                Copyright © 2026 All rights reserved | Made with ❤️ by The Bun Run
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
